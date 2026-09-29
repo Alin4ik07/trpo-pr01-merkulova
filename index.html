@@ -2,10 +2,48 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Информационный портал факультета</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Добро пожаловать на портал факультета</h1>
-    <p>Разработка структуры проекта и подключение к системе контроля версий.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">О курсе</a></li>
+                <li><a href="#tracks">Направления</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#signup">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>О курсе</h2>
+            <p>Добро пожаловать на учебный портал!</p>
+        </section>
+
+        <section id="tracks">
+            <h2>Направления обучения</h2>
+            <div class="card-container">
+                <div class="card" data-id="1">
+                    <h3>HTML <span class="category">(Основа)</span></h3>
+                    <p>Структура и разметка веб-страниц.</p>
+                    <div class="value">Сложность: 8</div>
+                </div>
+                <div class="card" data-id="2">
+                    <h3>CSS <span class="category">(Оформление)</span></h3>
+                    <p>Стили и адаптивная верстка.</p>
+                    <div class="value">Сложность: 9</div>
+                </div>
+                <div class="card" data-id="3">
+                    <h3>Git <span class="category">(Инструменты)</span></h3>
+                    <p>История изменений и контроль версий.</p>
+                    <div class="value">Сложность: 7</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
