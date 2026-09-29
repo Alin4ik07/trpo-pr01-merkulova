@@ -1,45 +1,49 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Информационный портал факультета</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">О курсе</a></li>
-                <li><a href="#tracks">Направления</a></li>
-                <li><a href="#schedule">Расписание</a></li>
-                <li><a href="#signup">Регистрация</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>О курсе</h2>
-            <p>Добро пожаловать на информационный портал нашего факультета.</p>
-        </section>
+        <!-- Раздел: Направления -->
         <section id="tracks">
             <h2>Направления</h2>
-            <p>Здесь будут отображаться карточки учебных модулей из датасета.</p>
-        </section>
-        <section id="schedule">
-            <h2>Расписание</h2>
-            <p>Актуальное расписание занятий и лекций.</p>
-        </section>
-        <section id="signup">
-            <h2>Регистрация</h2>
-            <p>Форма регистрации для новых студентов портала.</p>
-        </section>
+            <p>Доступные учебные модули:</p>
+            
+            <div class="cards-container">
+                <!-- Карточка 1 -->
+                <article class="card" data-id="1">
+                    <h3>HTML <span class="badge">Основа</span></h3>
+                    <p>Структура и разметка веб-страниц.</p>
+                    <div class="score">Сложность: 8</div>
+                </article>
 
-    </main>
-    <footer>
-        <p>&copy; 2026 Информационный портал факультета</p>
-    </footer>
+                <!-- Карточка 2 -->
+                <article class="card" data-id="2">
+                    <h3>CSS <span class="badge">Оформление</span></h3>
+                    <p>Стили и адаптивная верстка.</p>
+                    <div class="score">Сложность: 9</div>
+                </article>
 
-</body>
-</html>
+                <!-- Карточка 3 -->
+                <article class="card" data-id="3">
+                    <h3>Git <span class="badge">Инструменты</span></h3>
+                    <p>История изменений и контроль версий.</p>
+                    <div class="score">Сложность: 7</div>
+                </article>
+
+                <!-- Карточка 4 -->
+                <article class="card" data-id="4">
+                    <h3>Forms <span class="badge">HTML</span></h3>
+                    <p>Пользовательские формы.</p>
+                    <div class="score">Сложность: 6</div>
+                </article>
+
+                <!-- Карточка 5 -->
+                <article class="card" data-id="5">
+                    <h3>Accessibility <span class="badge">Качество</span></h3>
+                    <p>Доступность интерфейсов.</p>
+                    <div class="score">Сложность: 10</div>
+                </article>
+
+                <!-- Карточка 6 -->
+                <article class="card" data-id="6">
+                    <h3>DevTools <span class="badge">Проверка</span></h3>
+                    <p>Исследование элементов в браузере.</p>
+                    <div class="score">Сложность: 8</div>
+                </article>
+            </div>
+        </section>
