@@ -322,6 +322,14 @@ nav a:focus-visible {
     }
 }
 
+.form-group input:not(:placeholder-shown):invalid,
+.form-group select:not(:placeholder-shown):invalid,
+.form-group textarea:not(:placeholder-shown):invalid {
+    border-color: #e74c3c; 
+    background-color: #fdf2f2; 
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
 footer {
     text-align: center;
     padding: 20px;

@@ -1,0 +1,9 @@
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+.vscode/
+*.code-workspace
+
+*.swp
+*.bak
