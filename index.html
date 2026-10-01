@@ -18,10 +18,17 @@
         </nav>
     </header>
     <main>
-        
+        <div class="main-hero-banner">
+            <img src="images/logo.svg" alt="Главный баннер курса TRPO" class="hero-logo">
+        </div>
         <section id="about">
-            <h2>О курсе</h2>
-            <p>Добро пожаловать на информационный портал нашего факультета.</p>
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>О курсе</h2>
+                    <p>Добро пожаловать на информационный портал нашего факультета. Здесь собраны ключевые учебные модули по веб-разработке и инструментам командной работы.</p>
+                </div>
+                <img src="images/cover.svg" alt="Обложка курса HTML и CSS" class="about-cover">
+            </div>
         </section>
 
         <section id="tracks">
@@ -31,6 +38,7 @@
             <div class="cards-container">
                 <!-- Карточка 1 -->
                 <article class="card" data-id="1">
+                    <img src="images/html.png" alt="Логотип HTML5" class="card-img">
                     <h3>HTML <span class="badge">Основа</span></h3>
                     <p>Структура и разметка веб-страниц.</p>
                     <div class="score">Сложность: 8</div>
@@ -38,6 +46,7 @@
 
                 <!-- Карточка 2 -->
                 <article class="card" data-id="2">
+                    <img src="images/css.png" alt="Логотип CSS3" class="card-img">
                     <h3>CSS <span class="badge">Оформление</span></h3>
                     <p>Стили и адаптивная верстка.</p>
                     <div class="score">Сложность: 9</div>
@@ -45,6 +54,7 @@
 
                 <!-- Карточка 3 -->
                 <article class="card" data-id="3">
+                    <img src="images/git.png" alt="Логотип системы контроля версий Git" class="card-img">
                     <h3>Git <span class="badge">Инструменты</span></h3>
                     <p>История изменений и контроль версий.</p>
                     <div class="score">Сложность: 7</div>
@@ -52,6 +62,7 @@
 
                 <!-- Карточка 4 -->
                 <article class="card" data-id="4">
+                    <img src="images/forms.png" alt="Иллюстрация веб-формы" class="card-img">
                     <h3>Forms <span class="badge">HTML</span></h3>
                     <p>Пользовательские формы.</p>
                     <div class="score">Сложность: 6</div>
@@ -59,6 +70,7 @@
 
                 <!-- Карточка 5 -->
                 <article class="card" data-id="5">
+                    <img src="images/accessibility.png" alt="Иконка доступности интерфейсов" class="card-img">
                     <h3>Accessibility <span class="badge">Качество</span></h3>
                     <p>Доступность интерфейсов.</p>
                     <div class="score">Сложность: 10</div>
@@ -66,14 +78,13 @@
 
                 <!-- Карточка 6 -->
                 <article class="card" data-id="6">
+                    <img src="images/devtools.png" alt="Инструменты разработчика в браузере" class="card-img">
                     <h3>DevTools <span class="badge">Проверка</span></h3>
                     <p>Исследование элементов в браузере.</p>
                     <div class="score">Сложность: 8</div>
                 </article>
             </div>
-        </section>
 
-        <!-- Расписание -->
         <section id="schedule">
             <h2>Расписание и сложность модулей</h2>
             <p>Сводная таблица учебных направлений на основе исходного датасета:</p>
@@ -128,31 +139,23 @@
             </table>
         </section>
 
-        <!-- Раздел: Регистрация -->
         <section id="signup">
             <h2>Регистрация на учебный модуль</h2>
             <p>Заполните форму, чтобы записаться на один из курсов факультета:</p>
             
             <form class="signup-form" action="#" method="POST">
-                <!-- Текстовое поле с minlength -->
                 <div class="form-group">
                     <label for="user-name">Ваше имя и фамилия:</label>
                     <input type="text" id="user-name" name="username" minlength="3" maxlength="50" required placeholder="Иван Иванов">
                 </div>
-
-                <!-- Поле Email со специальным типом -->
                 <div class="form-group">
                     <label for="user-email">Электронная почта (Email):</label>
                     <input type="email" id="user-email" name="email" required placeholder="example@faculty.ru">
                 </div>
-
-                <!-- Числовое ограничение (тип number, min и max) -->
                 <div class="form-group">
                     <label for="user-age">Ваш возраст (от 16 до 60 лет):</label>
                     <input type="number" id="user-age" name="age" min="16" max="60" required placeholder="18">
                 </div>
-
-                <!-- Выпадающий список select -->
                 <div class="form-group">
                     <label for="course-select">Выберите модуль из датасета:</label>
                     <select id="course-select" name="course" required>
@@ -165,19 +168,13 @@
                         <option value="devtools">DevTools (Проверка)</option>
                     </select>
                 </div>
-
-                <!-- Многострочный текст textarea с ограничением символов -->
                 <div class="form-group">
                     <label for="user-message">Почему вы хотите пройти этот курс? (макс. 200 символов):</label>
                     <textarea id="user-message" name="message" maxlength="200" rows="4" placeholder="Напишите пару слов о вашей мотивации..."></textarea>
                 </div>
-
-                <!-- Кнопка отправки формы -->
                 <button type="submit" class="submit-btn">Отправить заявку</button>
             </form>
         </section>
-
-
     </main>
 
     <footer>
