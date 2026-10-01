@@ -291,6 +291,36 @@ nav a:focus-visible {
         overflow-x: auto;
     }
 }
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .signup-form {
+        width: 100%;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        width: 100%;
+        padding: 12px; 
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 14px;
+    }
+}
 
 footer {
     text-align: center;
