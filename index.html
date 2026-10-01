@@ -1,4 +1,29 @@
-        <!-- Раздел: Направления -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информационный портал факультета</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">О курсе</a></li>
+                <li><a href="#tracks">Направления</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#signup">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="about">
+            <h2>О курсе</h2>
+            <p>Добро пожаловать на информационный портал нашего факультета.</p>
+        </section>
+
         <section id="tracks">
             <h2>Направления</h2>
             <p>Доступные учебные модули:</p>
@@ -47,3 +72,116 @@
                 </article>
             </div>
         </section>
+
+        <!-- Расписание -->
+        <section id="schedule">
+            <h2>Расписание и сложность модулей</h2>
+            <p>Сводная таблица учебных направлений на основе исходного датасета:</p>
+            
+            <table class="dataset-table">
+                <thead>
+                    <tr>
+                        <th>ID (Идентификатор)</th>
+                        <th>Название модуля</th>
+                        <th>Категория</th>
+                        <th>Описание</th>
+                        <th>Сложность (Баллы)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>Основа</td>
+                        <td>Структура и разметка веб-страниц</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CSS</td>
+                        <td>Оформление</td>
+                        <td>Стили и адаптивная верстка</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Git</td>
+                        <td>Инструменты</td>
+                        <td>История изменений и контроль версий</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Forms</td>
+                        <td>HTML</td>
+                        <td>Пользовательские формы</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Accessibility</td>
+                        <td>Качество</td>
+                        <td>Доступность интерфейсов</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Раздел: Регистрация -->
+        <section id="signup">
+            <h2>Регистрация на учебный модуль</h2>
+            <p>Заполните форму, чтобы записаться на один из курсов факультета:</p>
+            
+            <form class="signup-form" action="#" method="POST">
+                <!-- Текстовое поле с minlength -->
+                <div class="form-group">
+                    <label for="user-name">Ваше имя и фамилия:</label>
+                    <input type="text" id="user-name" name="username" minlength="3" maxlength="50" required placeholder="Иван Иванов">
+                </div>
+
+                <!-- Поле Email со специальным типом -->
+                <div class="form-group">
+                    <label for="user-email">Электронная почта (Email):</label>
+                    <input type="email" id="user-email" name="email" required placeholder="example@faculty.ru">
+                </div>
+
+                <!-- Числовое ограничение (тип number, min и max) -->
+                <div class="form-group">
+                    <label for="user-age">Ваш возраст (от 16 до 60 лет):</label>
+                    <input type="number" id="user-age" name="age" min="16" max="60" required placeholder="18">
+                </div>
+
+                <!-- Выпадающий список select -->
+                <div class="form-group">
+                    <label for="course-select">Выберите модуль из датасета:</label>
+                    <select id="course-select" name="course" required>
+                        <option value="" disabled selected>-- Выберите направление --</option>
+                        <option value="html">HTML (Основа)</option>
+                        <option value="css">CSS (Оформление)</option>
+                        <option value="git">Git (Инструменты)</option>
+                        <option value="forms">Forms (HTML)</option>
+                        <option value="accessibility">Accessibility (Качество)</option>
+                        <option value="devtools">DevTools (Проверка)</option>
+                    </select>
+                </div>
+
+                <!-- Многострочный текст textarea с ограничением символов -->
+                <div class="form-group">
+                    <label for="user-message">Почему вы хотите пройти этот курс? (макс. 200 символов):</label>
+                    <textarea id="user-message" name="message" maxlength="200" rows="4" placeholder="Напишите пару слов о вашей мотивации..."></textarea>
+                </div>
+
+                <!-- Кнопка отправки формы -->
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Информационный портал факультета</p>
+    </footer>
+</body>
+</html>
